@@ -1,0 +1,14 @@
+/* Mobile first */
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social-media img{
+    width: 75px;
+    height: 80px;
+}
+
+.github{
+    margin-top: 8%;
+}

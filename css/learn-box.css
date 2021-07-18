@@ -1,0 +1,19 @@
+.learn{
+    font-size: 20px;
+    font-weight: 600;
+    color: #f2c200;
+    text-align: center;
+    text-transform: uppercase;
+}
+.learn-box{
+    padding: 25px;
+}
+@media (min-width: 1100px){
+    .learn{
+        font-size: 45px;
+        text-shadow: 2px 2px #1a1a1a79 ;
+    }
+    .learn-box{
+        padding: 155px 0;
+    }
+}

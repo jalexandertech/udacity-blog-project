@@ -1,3 +1,7 @@
+@import url("./social-media.css");
+@import url("./learn-box.css");
+@import url(./blog.css);
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -57,11 +61,11 @@ header{
 }
 
 header h1{
-    font-size: 43px;
+    font-size: 38px;
     text-shadow: 2px 2px #1a1a1a79 ;
     font-weight: 700;
     color: #fffff8;
-    padding-left: 95px;
+    padding-left: 65px;
     padding-top: 40px;
 }
 .banner{
@@ -154,15 +158,9 @@ aside{
     color: #093464;
     font-weight: 700;
 }
-.learn{
-    font-size: 25px;
-    font-weight: 600;
-    color: #f2c200;
-    text-align: center;
-    text-transform: uppercase;
-}
-.learn-box{
-    padding-top: 155px;
+
+blockquote{
+    margin-left: 40px;
 }
 
 footer{
@@ -171,7 +169,7 @@ footer{
     padding: 25px;
 }
 
-@media (min-width: 900px){
+@media (min-width: 1100px){
     #wrapper{
         display: grid;
         grid-template-columns:repeat(3, 300px) ;
@@ -212,11 +210,5 @@ aside img{
     flex-wrap: nowrap;
     margin-top: 45px;
 }
-.learn{
-    font-size: 65px;
-    text-shadow: 2px 2px #1a1a1a79 ;
-}
-.learn-box{
-    padding: 155px 0;
-}
+
 }
