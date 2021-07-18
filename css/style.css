@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #F4F789;
+    background-color: #ffffff;
     font-family: 'Lora', serif;
 
 }
@@ -13,8 +13,9 @@ body{
 #wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 125px 1fr; 
+    grid-template-rows: 70px 155px 1fr; 
     grid-template-areas: 
+    "nav"
     "header"
     "main"
     "aside"
@@ -22,24 +23,73 @@ body{
     ;
 }
 
+nav{
+    grid-area: nav; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    background-color: #093464;
+}
+
+li{
+    display: inline-block;
+   
+}
+button{
+    border: 1px solid #f2c200;
+    background-color: #f2c200;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+color: #ffffff;
+}
+span{
+    color: #fffff8;
+}
+
 header{
     grid-area: header;
     text-align: center;
-    padding: 35px;
 }
 
 header h1{
-    font-size: 45px;
-    text-shadow: 2px 2px #504e4e38 ;
+    font-size: 43px;
+    text-shadow: 2px 2px #1a1a1a79 ;
     font-weight: 700;
+    color: #fffff8;
+    padding-left: 95px;
+    padding-top: 40px;
 }
-
+.banner{
+    background-image: url(../images/background.png);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
 main{
     grid-area: main;
     padding: 25px;
     font-size: 18px;
 }
+main p{
+    padding: 15px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 45px;
+}
 
+.textbox{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 15px;
+    
+}
 .image{
     height: 150px;
     background: url(../images/lady-coding.jpg);
@@ -59,51 +109,114 @@ main{
     padding-bottom: 15px;
 }
 
-.btn-secondary{
-    background-color: #9b9ea1;
-}
 
 .form-check{
     margin: 25px;
 }
-.accordion-button:not(.collapsed){
-    background-color: #c4c4c4;
-    color: #ffffff;
+aside img{
+    width: 350px;
+    height: 200px;
 }
-.accordion-button{
-    border: none;
+
+.about{
+    text-align: center;
+    font-size: 35px;
 }
-.accordion-button:not(.collapsed)::after{
-    background: none;
+.container-img{
+    display: flex;
+    justify-content: center;
 }
+.illustration img{
+    width: 350px;
+    height: 450px;
+}
+
 aside{
     grid-area: aside;
     padding: 25px;
+}
+.blog-box{
+    padding: 25px;
+}
+
+.blog-box h1{
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 35px;
+}
+.blog{
+    padding: 25px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+
+.body a{
+    color: #093464;
+    font-weight: 700;
+}
+.learn{
+    font-size: 25px;
+    font-weight: 600;
+    color: #f2c200;
+    text-align: center;
+    text-transform: uppercase;
+}
+.learn-box{
+    padding-top: 155px;
 }
 
 footer{
     grid-area: footer;
     text-align: center;
+    padding: 25px;
 }
 
 @media (min-width: 900px){
     #wrapper{
         display: grid;
         grid-template-columns:repeat(3, 300px) ;
-        grid-template-rows: 205px 860px 1fr;
+        grid-template-rows: 300px 65px 1fr;
        grid-template-areas: 
        "header header header header header header header"
+       "nav nav nav nav nav nav nav"
        "aside aside main main main main main"
        "footer footer footer footer footer footer footer"
        ;
         
     }
 
+
+
    header h1{
-       font-size: 75px;
+       font-size: 105px;
+       padding-top: 65px;
    }
 
-   main{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-   }
+   .illustration img{
+    width: 550px;
+    height: 450px;
+}
+.container-img{
+    justify-content: flex-end;
+}
+aside img{
+    width: 550px;
+    height: 300px;
+}
+
+.about-me{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 25px;
+}
+.container{
+    flex-wrap: nowrap;
+    margin-top: 45px;
+}
+.learn{
+    font-size: 65px;
+    text-shadow: 2px 2px #1a1a1a79 ;
+}
+.learn-box{
+    padding: 155px 0;
+}
 }

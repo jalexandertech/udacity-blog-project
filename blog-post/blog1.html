@@ -6,59 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where to start</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/blog.css">
 </head>
 
 <body>
-    <header>
-        <h1>Where to start?</h1>
-    </header>
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li><button><a href="../index.html">Home</a></button></li>
+                <span>|</span>
+                <li><button><a href="./blog1.html">Blog of The Day</a></button></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="banner">
+                <h1>Where to start?</h1>
+            </div>
+
+        </header>
     <main>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="card">
+        <div class="container-cards">
+                <div class="card1 card">
                     <img src="../images/html.jpg" class="card-img-top" alt="letters H-T-M-L">
                     <div class="card-body">
-                        <h5 class="card-title">HTML</h5>
+                        <h2 class="card-title">HTML</h2>
                         <ul class="card-text">
                             <li><a href="https://w3schools.com/html/" target="_blank">HTML Tutorial - W3Schools</a></li>
                             <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML: HyperText Markup Language | MDN</a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
+          
+                <div class="card2 card">
                     <img src="../images/css.jpg" class="card-img-top" alt="CSS Books">
                     <div class="card-body">
-                        <h5 class="card-title">CSS</h5>
+                        <h2 class="card-title">CSS</h2>
                         <ul class="card-text">
                             <li><a href="https://w3schools.com/css/" target="_blank">CSS Tutorial - W3Schools</a></li>
                             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS: Cascading Style Sheets | MDN</a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
+        
+                <div class="card3 card">
                     <img src="../images/javascript.jpg" class="card-img-top" alt="JavaScript code">
                     <div class="card-body">
-                        <h5 class="card-title">JavaScript</h5>
+                        <h2 class="card-title">JavaScript</h2>
                         <ul class="card-text">
                             <li><a href="https://w3schools.com/js/" target="_blank">JavaScript Tutorial - W3Schools</a></li>
                             <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript | MDN</a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
+        
+                <div class="card4 card">
                     <img src="../images/code.jpg" class="card-img-top" alt="Man with a shirt that states Eat Sleep Code">
                     <div class="card-body">
-                        <h5 class="card-title">Practice</h5>
+                        <h2 class="card-title">Practice</h2>
                         <ul class="card-text">  
                             <li><a href="https://www.codecademy.com/learn/paths/web-development" target="_blank">Web Development | Codecademy</a></li>
                             <li><a href="https://exercism.io/" target="_blank">Exercism</a></li>
@@ -66,12 +70,57 @@
                     </div>
                 </div>
             </div>
-        </div>
     </main>
-    <footer><div class="home"> <a href="../index.html">Home</a></div></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <aside>
+        <div class="blog-box">
+            <h1>Blog Posts</h1>
+        <!-- Blog 1 -->
+        <div class="blog">
+            <h2>Where to Start?</h2>
+            <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                    sagittis,
+                    sapien dui mattis dui, non pulvinar lorem felis nec erat.... <a
+                        href="./blog-post/blog1.html">Read more</a></p>
+            </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog">
+
+            <h2>Programming Languages</h2>
+            <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                    sagittis,
+                    sapien dui mattis dui, non pulvinar lorem felis nec erat.... <a
+                        href="./blog-post/blog1.html">Read more</a></p>
+            </div>
+        </div>
+        <!-- Blog 3 -->
+        <div class="blog">
+            <h2>Project Ideas</h2>
+            <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                    sagittis,
+                    sapien dui mattis dui, non pulvinar lorem felis nec erat.... <a
+                        href="./blog-post/blog1.html">Read more</a></p>
+            </div>
+        </div>
+        <!-- Blog 4 -->
+        <div class="blog">
+            <h2>Additional Resources</h2>
+            <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                    sagittis,
+                    sapien dui mattis dui, non pulvinar lorem felis nec erat.... <a
+                        href="./blog-post/blog1.html">Read more</a></p>
+            </div>
+        </div>
+    </div>
+    </aside>
+    <footer>
+        <p>Jada Alexander's Blog</p>
+    </footer>
 </body>
 
 </html>

@@ -1,14 +1,69 @@
-@import './style.css';
+@import '../css/style.css';
 
+/* Mobile First */
+.container-cards{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
 
+.card{
+    padding: 25px;
+}
 .card-img-top{
-height: 280px;
+height: 200px;
 }
 
-ul{
-    list-style: none;
+li{
+    list-style:circle;
 }
 
-a{
-    text-decoration: none;
+header h1{
+    font-size: 35px;
+}
+.container-cards a{
+    color: #0077ff;
+ 
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-weight: 700;
+}
+
+@media (min-width: 900px){
+.container-cards{
+ display: grid;
+ /* grid-template-columns: repeat(3, 300px); */
+ grid-template-rows: 50% 50%;
+ grid-template-areas: 
+ "aside c1 c2"
+ "aside c3 c4";
+}
+
+.card1{
+    grid-area:c1;
+}
+
+.card2{
+    grid-area: c2;
+}
+
+.card3{
+    grid-area: c3;
+}
+
+.card4{
+    grid-area:c4;
+}
+
+.container-cards{
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 95px;
+}
 }
