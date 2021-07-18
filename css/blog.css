@@ -1,0 +1,14 @@
+@import './style.css';
+
+
+.card-img-top{
+height: 280px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
